@@ -20,7 +20,15 @@ void Print_Vector(vector<string>& file)
 
 void Write_vectorInFile(vector<string>& file)
 {
-
+    ofstream outfile;
+    outfile.open("write_vectorInFile.txt");
+    if (outfile.is_open())
+    {
+        for (int i = 0; i < file.size(); i++)
+        {
+            outfile << file[i] << endl;
+        }
+    }
 }
 
 int main()
