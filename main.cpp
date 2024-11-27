@@ -11,7 +11,11 @@ void Read_File(vector<string>& file)
 
 void Print_Vector(vector<string>& file)
 {
-
+    for(auto it=file.begin(); it!=file.end(); it++)
+        {
+            string x = *it;
+            cout << x << endl;
+        }
 }
 
 void Write_vectorInFile(vector<string>& file)
